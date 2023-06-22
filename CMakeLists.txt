@@ -19,7 +19,11 @@ target_include_directories(
 )
 target_include_directories(
     MVC_pattern PRIVATE 
-    ${CMAKE_CURRENT_SOURCE_DIR}/Models/.
+    ${CMAKE_CURRENT_SOURCE_DIR}/Model
+)
+target_include_directories(
+    MVC_pattern PRIVATE 
+    ${CMAKE_CURRENT_SOURCE_DIR}/Model/Geometric_shapes
 )
 target_include_directories(
     MVC_pattern PRIVATE 
