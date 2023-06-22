@@ -6,7 +6,7 @@
 int main()
 {
 	std::unique_ptr<ModelEdit> Model;
-	ViewEdit View(std::make_unique<ControlEdit>(std::move(Model)));
+	ControlEdit Controller(std::move(Model));
 	
 
 	return 0;
