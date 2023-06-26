@@ -11,37 +11,23 @@ public:
 	virtual ~IShapes() = default;
 };
 
-
 class Triangle :public IShapes {
-private:
-	Point _a;
-	Point _b;
-	Point _c;
 public:
-	Triangle(Point a, Point b, Point c) :_a(a), _b(b), _c(c) {};
+	Triangle() {};
 	void showShape()const override { std::cout << "Triangle" << std::endl; }
-
 	~Triangle()override = default;
 };
 
 class Square :public IShapes {
-private:
-	Point _a;
-	int sidelengh;
 public:
-	Square(Point a, int l) :_a(a), sidelengh(l) {};
-
+	Square()  {};
 	void showShape()const override { std::cout << "Square" << std::endl; }
 	~Square()override = default;
 };
 
 class Circle :public IShapes {
-private:
-	Point _a;
-	int radius;
 public:
-	Circle(Point a, int r) :_a(a), radius(r) {};
-
+	Circle() {};
 	void showShape()const override { std::cout << "Circle" << std::endl; }
 	~Circle()override = default;
 };
