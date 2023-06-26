@@ -33,6 +33,10 @@ target_include_directories(
     MVC_pattern PRIVATE 
     ${CMAKE_CURRENT_SOURCE_DIR}/Controller
 )
+target_include_directories(
+    MVC_pattern PRIVATE 
+    ${CMAKE_CURRENT_SOURCE_DIR}/Observ
+)
 
 target_include_directories(
     MVC_pattern_gtest PRIVATE
