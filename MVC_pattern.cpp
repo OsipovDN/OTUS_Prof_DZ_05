@@ -1,6 +1,5 @@
 ﻿#include <iostream>
 #include "ModelEditor.h"
-#include "ViewEditor.h"
 #include "ControlEditor.h"
 
 int main()

@@ -1,8 +1,8 @@
 #pragma once
 #include"ModelEditor.h"
 #include"ViewEditor.h"
+#include <vector>
 #include <memory>
-
 
 class Observer {
 public:
