@@ -1,40 +1,32 @@
 #pragma once
 #include "IShapes.h"
-#include "Observ.h"
-#include <list>
-#include <memory>
+#include <vector>
 
-
-class ModelEdit :public Observable {
+class ModelEdit {
 private:
-	std::list<std::shared_ptr<IShapes>> pul_fig;
+	std::vector<std::shared_ptr<IShapes>> pul_fig;
 public:
 	void addShape(std::string tp) {
 		if (tp == "Triangle") {
-			pul_fig.emplace_back(std::make_shared<Triangle>());
-			notifyUpdate();
+			pul_fig.push_back(std::make_shared<Triangle>());
 		}
 		else if (tp == "Square") {
-			pul_fig.emplace_back(std::make_shared <Square>());
-			notifyUpdate();
+			pul_fig.push_back(std::make_shared <Square>());
 		}
 		else if (tp == "Circle") {
-			pul_fig.emplace_back(std::make_shared<Circle>());
-			notifyUpdate();
+			pul_fig.push_back(std::make_shared<Circle>());
 		}
 	}
-	void removeShape(int num) {};
+	void removeShape(int&) {};
 	void getFig() {
 		for (const auto& it : pul_fig) {
 			it->showShape();
 		}
+		std::cout << std::endl;
 	}
-	bool importFromFile(std::string filename) {
-		//...
-		notifyUpdate();
-	};
-	bool exportToFile(std::string filename) {
-		//...
-		notifyUpdate();
-	};
+	std::vector<std::shared_ptr<IShapes>> getDate() { return pul_fig; }
+	void setDate (/*std::vector<std::shared_ptr<IShapes>>*/){}
+
+	
+
 };

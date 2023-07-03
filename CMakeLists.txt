@@ -35,7 +35,7 @@ target_include_directories(
 )
 target_include_directories(
     MVC_pattern PRIVATE 
-    ${CMAKE_CURRENT_SOURCE_DIR}/Observ
+    ${CMAKE_CURRENT_SOURCE_DIR}/Service
 )
 
 target_include_directories(
