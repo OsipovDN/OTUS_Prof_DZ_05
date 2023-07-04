@@ -1,0 +1,70 @@
+\doxysection{View\+Edit Class Reference}
+\hypertarget{class_view_edit}{}\label{class_view_edit}\index{ViewEdit@{ViewEdit}}
+
+
+Класс представления для вывода в консоль  
+
+
+
+
+{\ttfamily \#include $<$View\+Editor.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_view_edit_ab31162e35678c25a4f069892dc61868a}{View\+Edit}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model_edit}{Model\+Edit}} $>$ md)
+\item 
+void \mbox{\hyperlink{class_view_edit_a5f2d61c4d7751364fdc728790eb05658}{update}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс представления для вывода в консоль 
+
+Отображает изменения внесенные пользователем через интерфейс Controller 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_view_edit_ab31162e35678c25a4f069892dc61868a}\label{class_view_edit_ab31162e35678c25a4f069892dc61868a} 
+\index{ViewEdit@{ViewEdit}!ViewEdit@{ViewEdit}}
+\index{ViewEdit@{ViewEdit}!ViewEdit@{ViewEdit}}
+\doxysubsubsection{\texorpdfstring{ViewEdit()}{ViewEdit()}}
+{\footnotesize\ttfamily View\+Edit\+::\+View\+Edit (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model_edit}{Model\+Edit}} $>$}]{md }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Конструктор для формирования объекта View 
+\begin{DoxyParams}{Parameters}
+{\em md} & указатель на объект модели \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ Mod\ =\ md;}
+\DoxyCodeLine{00025\ \ \ \ \ \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_view_edit_a5f2d61c4d7751364fdc728790eb05658}\label{class_view_edit_a5f2d61c4d7751364fdc728790eb05658} 
+\index{ViewEdit@{ViewEdit}!update@{update}}
+\index{update@{update}!ViewEdit@{ViewEdit}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void View\+Edit\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод для обновления отображения
+
+Метод используется для обновления данных об отображении в случае изменения модели. Запуск обновления отображения производится через модуль Controller. \begin{DoxyReturn}{Returns}
+не имеет возвращаемого значнеия 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ Mod-\/>getFig();}
+\DoxyCodeLine{00034\ \ \ \ \ \};}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+View/\mbox{\hyperlink{_view_editor_8h}{View\+Editor.\+h}}\end{DoxyCompactItemize}

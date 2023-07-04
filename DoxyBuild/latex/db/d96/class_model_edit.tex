@@ -1,0 +1,132 @@
+\doxysection{РљР»Р°СЃСЃ Model\+Edit}
+\hypertarget{class_model_edit}{}\label{class_model_edit}\index{ModelEdit@{ModelEdit}}
+
+
+Класса \"{}\+Model\+Edit\"{}-\/ Графический редактор  
+
+
+
+
+{\ttfamily \#include $<$Model\+Editor.\+h$>$}
+
+\doxysubsubsection*{РћС‚РєСЂС‹С‚С‹Рµ С‡Р»РµРЅС‹}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_model_edit_a29c538d02eb96449d7243ce0f59b37ab}{add\+Shape}} (std\+::string tp)
+\item 
+void \mbox{\hyperlink{class_model_edit_afe3398d371c608adaa5519ace8103849}{remove\+Shape}} (int \&)
+\item 
+void \mbox{\hyperlink{class_model_edit_a0c722ef7dc80cf388e74a4c82c902680}{get\+Fig}} ()
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_shapes}{IShapes}} $>$ $>$ \mbox{\hyperlink{class_model_edit_a9c08579d2a9580f33d75e84b00cf3622}{get\+Date}} ()
+\item 
+void \mbox{\hyperlink{class_model_edit_af8cc886c8fdaf2b4e3e474f81e75c4aa}{set\+Date}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{РџРѕРґСЂРѕР±РЅРѕРµ РѕРїРёСЃР°РЅРёРµ}
+Класса \"{}\+Model\+Edit\"{}-\/ Графический редактор 
+
+Класс содержит описание полей и методов геометрических фигур. 
+
+\doxysubsection{РњРµС‚РѕРґС‹}
+\Hypertarget{class_model_edit_a29c538d02eb96449d7243ce0f59b37ab}\label{class_model_edit_a29c538d02eb96449d7243ce0f59b37ab} 
+\index{ModelEdit@{ModelEdit}!addShape@{addShape}}
+\index{addShape@{addShape}!ModelEdit@{ModelEdit}}
+\doxysubsubsection{\texorpdfstring{addShape()}{addShape()}}
+{\footnotesize\ttfamily void Model\+Edit\+::add\+Shape (\begin{DoxyParamCaption}\item[{std\+::string}]{tp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод для добавления нового геометрического приметива. 
+\begin{DoxyParams}{РђСЂРіСѓРјРµРЅС‚С‹}
+{\em tp} & наименование геометрического примитива \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Р’РѕР·РІСЂР°С‰Р°РµС‚}
+не имеет возвращаемого значения. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tp\ ==\ \textcolor{stringliteral}{"{}Triangle"{}})\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ pul\_fig.push\_back(std::make\_shared<Triangle>());}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (tp\ ==\ \textcolor{stringliteral}{"{}Square"{}})\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ pul\_fig.push\_back(std::make\_shared\ <Square>());}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (tp\ ==\ \textcolor{stringliteral}{"{}Circle"{}})\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ pul\_fig.push\_back(std::make\_shared<Circle>());}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_model_edit_a9c08579d2a9580f33d75e84b00cf3622}\label{class_model_edit_a9c08579d2a9580f33d75e84b00cf3622} 
+\index{ModelEdit@{ModelEdit}!getDate@{getDate}}
+\index{getDate@{getDate}!ModelEdit@{ModelEdit}}
+\doxysubsubsection{\texorpdfstring{getDate()}{getDate()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_shapes}{IShapes}} $>$ $>$ Model\+Edit\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод предоставляющий данные сохранения в файле. \begin{DoxyReturn}{Р’РѕР·РІСЂР°С‰Р°РµС‚}
+вектор указателей на объекты геометрических фигур. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00054\ \{\ \textcolor{keywordflow}{return}\ pul\_fig;\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_model_edit_a0c722ef7dc80cf388e74a4c82c902680}\label{class_model_edit_a0c722ef7dc80cf388e74a4c82c902680} 
+\index{ModelEdit@{ModelEdit}!getFig@{getFig}}
+\index{getFig@{getFig}!ModelEdit@{ModelEdit}}
+\doxysubsubsection{\texorpdfstring{getFig()}{getFig()}}
+{\footnotesize\ttfamily void Model\+Edit\+::get\+Fig (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод предоставляющий данные для отображения геометрических примитивов. \begin{DoxyReturn}{Р’РѕР·РІСЂР°С‰Р°РµС‚}
+не имеет возвращаемого значения. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ it\ :\ pul\_fig)\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ it-\/>showShape();}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ std::cout\ <<\ std::endl;}
+\DoxyCodeLine{00050\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_model_edit_afe3398d371c608adaa5519ace8103849}\label{class_model_edit_afe3398d371c608adaa5519ace8103849} 
+\index{ModelEdit@{ModelEdit}!removeShape@{removeShape}}
+\index{removeShape@{removeShape}!ModelEdit@{ModelEdit}}
+\doxysubsubsection{\texorpdfstring{removeShape()}{removeShape()}}
+{\footnotesize\ttfamily void Model\+Edit\+::remove\+Shape (\begin{DoxyParamCaption}\item[{int \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод для удаления геометрического приметива. 
+\begin{DoxyParams}{РђСЂРіСѓРјРµРЅС‚С‹}
+{\em индекс} & удаляемого примитива \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Р’РѕР·РІСЂР°С‰Р°РµС‚}
+не имеет возвращаемого значения. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00041\ \{\};}
+
+\end{DoxyCode}
+\Hypertarget{class_model_edit_af8cc886c8fdaf2b4e3e474f81e75c4aa}\label{class_model_edit_af8cc886c8fdaf2b4e3e474f81e75c4aa} 
+\index{ModelEdit@{ModelEdit}!setDate@{setDate}}
+\index{setDate@{setDate}!ModelEdit@{ModelEdit}}
+\doxysubsubsection{\texorpdfstring{setDate()}{setDate()}}
+{\footnotesize\ttfamily void Model\+Edit\+::set\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод предоставляющий данные сохранения в файле. \begin{DoxyReturn}{Р’РѕР·РІСЂР°С‰Р°РµС‚}
+не имеет возвращаемого значения. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00058\ \{\}}
+
+\end{DoxyCode}
+
+
+РћР±СЉСЏРІР»РµРЅРёСЏ Рё РѕРїРёСЃР°РЅРёСЏ С‡Р»РµРЅРѕРІ РєР»Р°СЃСЃР° РЅР°С…РѕРґСЏС‚СЃСЏ РІ С„Р°Р№Р»Рµ\+:\begin{DoxyCompactItemize}
+\item 
+Model/\mbox{\hyperlink{_model_editor_8h}{Model\+Editor.\+h}}\end{DoxyCompactItemize}

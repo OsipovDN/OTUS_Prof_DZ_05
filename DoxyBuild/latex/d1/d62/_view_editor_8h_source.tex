@@ -1,0 +1,21 @@
+\doxysection{View\+Editor.\+h}
+\hypertarget{_view_editor_8h_source}{}\label{_view_editor_8h_source}\index{View/ViewEditor.h@{View/ViewEditor.h}}
+\mbox{\hyperlink{_view_editor_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_model_editor_8h}{ModelEditor.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_view_edit}{ViewEdit}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ std::shared\_ptr<ModelEdit>\ Mod;\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_view_edit_ab31162e35678c25a4f069892dc61868a}{ViewEdit}}(std::shared\_ptr<ModelEdit>\ md)\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ Mod\ =\ md;}
+\DoxyCodeLine{00025\ \ \ \ \ \};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_view_edit_a5f2d61c4d7751364fdc728790eb05658}{update}}()\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ Mod-\/>getFig();}
+\DoxyCodeLine{00034\ \ \ \ \ \};}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+
+\end{DoxyCode}

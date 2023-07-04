@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MVC_pattern: Исходный файл Service/SLManager.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MVC_pattern
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_44eb20806aaf8411decdc863bb791107.html">Service</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">SLManager.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../db/de2/_s_l_manager_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="../../d6/d8a/_model_editor_8h.html">ModelEditor.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../d4/dc5/class_s_l_manager.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d4/dc5/class_s_l_manager.html">SLManager</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    std::shared_ptr&lt;ModelEdit&gt; Mod; </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d4/dc5/class_s_l_manager.html#aa9aea823720261cd2dbab7380957f005">   26</a></span>    <a class="code hl_function" href="../../d4/dc5/class_s_l_manager.html#aa9aea823720261cd2dbab7380957f005">SLManager</a>(std::shared_ptr&lt;ModelEdit&gt; md) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        Mod = md;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d4/dc5/class_s_l_manager.html#a265653831988358dd41152d9ac072b69">   33</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d4/dc5/class_s_l_manager.html#a265653831988358dd41152d9ac072b69">importFromFile</a>(std::string filename) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="comment">//...</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        Mod-&gt;setDate();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d4/dc5/class_s_l_manager.html#a094e81c17bf7bed58281ea0b66aba20a">   41</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d4/dc5/class_s_l_manager.html#a094e81c17bf7bed58281ea0b66aba20a">exportToFile</a>(std::string filename) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="comment">//...</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        Mod-&gt;getDate();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+<div class="ttc" id="a_model_editor_8h_html"><div class="ttname"><a href="../../d6/d8a/_model_editor_8h.html">ModelEditor.h</a></div><div class="ttdoc">������������ ���� ModelEditor.h.</div></div>
+<div class="ttc" id="aclass_s_l_manager_html"><div class="ttname"><a href="../../d4/dc5/class_s_l_manager.html">SLManager</a></div><div class="ttdoc">��������� ������ &quot;Save/Load Manager&quot;.</div><div class="ttdef"><b>Definition</b> SLManager.h:17</div></div>
+<div class="ttc" id="aclass_s_l_manager_html_a094e81c17bf7bed58281ea0b66aba20a"><div class="ttname"><a href="../../d4/dc5/class_s_l_manager.html#a094e81c17bf7bed58281ea0b66aba20a">SLManager::exportToFile</a></div><div class="ttdeci">bool exportToFile(std::string filename)</div><div class="ttdef"><b>Definition</b> SLManager.h:41</div></div>
+<div class="ttc" id="aclass_s_l_manager_html_a265653831988358dd41152d9ac072b69"><div class="ttname"><a href="../../d4/dc5/class_s_l_manager.html#a265653831988358dd41152d9ac072b69">SLManager::importFromFile</a></div><div class="ttdeci">bool importFromFile(std::string filename)</div><div class="ttdef"><b>Definition</b> SLManager.h:33</div></div>
+<div class="ttc" id="aclass_s_l_manager_html_aa9aea823720261cd2dbab7380957f005"><div class="ttname"><a href="../../d4/dc5/class_s_l_manager.html#aa9aea823720261cd2dbab7380957f005">SLManager::SLManager</a></div><div class="ttdeci">SLManager(std::shared_ptr&lt; ModelEdit &gt; md)</div><div class="ttdef"><b>Definition</b> SLManager.h:26</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

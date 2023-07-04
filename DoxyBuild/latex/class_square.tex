@@ -1,0 +1,92 @@
+\doxysection{Square Class Reference}
+\hypertarget{class_square}{}\label{class_square}\index{Square@{Square}}
+
+
+Класс \"{}Квадрат\"{}  
+
+
+
+
+{\ttfamily \#include $<$IShapes.\+h$>$}
+
+Inheritance diagram for Square\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_square}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_square_a3dc7ff9aefc2725172b5d3153973d243}{Square}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор класса \"{}Квадрат\"{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_square_a13f7e87b2afb76b11557833556aa6722}{show\+Shape}} () const override
+\item 
+\mbox{\hyperlink{class_square_a6663466977f74e263d79e35c4fa79311}{\texorpdfstring{$\sim$}{\string~}\+Square}} () override=default
+\begin{DoxyCompactList}\small\item\em Виртуальный диструктор интерфейса \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_i_shapes}{IShapes}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_i_shapes_a7d8ce15f77ad1cc0b5480e0d90ff06a8}{show\+Shape}} () const =0
+\begin{DoxyCompactList}\small\item\em Виртуальный метод интерфейса \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_i_shapes_afdaaa22fb99a31418ff2e3dc692b8198}{\texorpdfstring{$\sim$}{\string~}\+IShapes}} ()=default
+\begin{DoxyCompactList}\small\item\em Виртуальный диструктор интерфейса \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс \"{}Квадрат\"{} 
+
+Класс содержит методы взаимодействия с геометрической фигупрой \"{}Квадрат\"{}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_square_a3dc7ff9aefc2725172b5d3153973d243}\label{class_square_a3dc7ff9aefc2725172b5d3153973d243} 
+\index{Square@{Square}!Square@{Square}}
+\index{Square@{Square}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{Square()}{Square()}}
+{\footnotesize\ttfamily Square\+::\+Square (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор класса \"{}Квадрат\"{} 
+
+Инициализирует поля класса (координаты и т.\+д.),если они есть. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00058\ \{\};}
+
+\end{DoxyCode}
+\Hypertarget{class_square_a6663466977f74e263d79e35c4fa79311}\label{class_square_a6663466977f74e263d79e35c4fa79311} 
+\index{Square@{Square}!````~Square@{\texorpdfstring{$\sim$}{\string~}Square}}
+\index{````~Square@{\texorpdfstring{$\sim$}{\string~}Square}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Square()}{\string~Square()}}
+{\footnotesize\ttfamily Square\+::\texorpdfstring{$\sim$}{\string~}\+Square (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+Виртуальный диструктор интерфейса 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_square_a13f7e87b2afb76b11557833556aa6722}\label{class_square_a13f7e87b2afb76b11557833556aa6722} 
+\index{Square@{Square}!showShape@{showShape}}
+\index{showShape@{showShape}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{showShape()}{showShape()}}
+{\footnotesize\ttfamily void Square\+::show\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Консантный переопределенный метод для отображения данных полей класса и предоставления их View\textquotesingle{}у. \begin{DoxyReturn}{Returns}
+не имеет возвращаемого значения. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_shapes_a7d8ce15f77ad1cc0b5480e0d90ff06a8}{IShapes}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00062\ \{\ std::cout\ <<\ \textcolor{stringliteral}{"{}Square"{}}\ <<\ std::endl;\ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Model/\+Geometric\+\_\+shapes/\mbox{\hyperlink{_i_shapes_8h}{IShapes.\+h}}\end{DoxyCompactItemize}
