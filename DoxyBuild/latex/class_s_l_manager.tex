@@ -1,0 +1,100 @@
+\doxysection{SLManager Class Reference}
+\hypertarget{class_s_l_manager}{}\label{class_s_l_manager}\index{SLManager@{SLManager}}
+
+
+Интерфейс класса \"{}\+Save/\+Load Manager\"{}.  
+
+
+
+
+{\ttfamily \#include $<$SLManager.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_l_manager_aa9aea823720261cd2dbab7380957f005}{SLManager}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model_edit}{Model\+Edit}} $>$ md)
+\item 
+bool \mbox{\hyperlink{class_s_l_manager_a265653831988358dd41152d9ac072b69}{import\+From\+File}} (std\+::string filename)
+\item 
+bool \mbox{\hyperlink{class_s_l_manager_a094e81c17bf7bed58281ea0b66aba20a}{export\+To\+File}} (std\+::string filename)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Интерфейс класса \"{}\+Save/\+Load Manager\"{}. 
+
+Класс описывает методы сохранения и загрузки данных из модели в/из файл(а). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_s_l_manager_aa9aea823720261cd2dbab7380957f005}\label{class_s_l_manager_aa9aea823720261cd2dbab7380957f005} 
+\index{SLManager@{SLManager}!SLManager@{SLManager}}
+\index{SLManager@{SLManager}!SLManager@{SLManager}}
+\doxysubsubsection{\texorpdfstring{SLManager()}{SLManager()}}
+{\footnotesize\ttfamily SLManager\+::\+SLManager (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model_edit}{Model\+Edit}} $>$}]{md }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Конструктор класса для формирования объекта взаимодействующего с моделью.
+
+
+\begin{DoxyParams}{Parameters}
+{\em md} & указатель на объект модели. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ Mod\ =\ md;}
+\DoxyCodeLine{00028\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_s_l_manager_a094e81c17bf7bed58281ea0b66aba20a}\label{class_s_l_manager_a094e81c17bf7bed58281ea0b66aba20a} 
+\index{SLManager@{SLManager}!exportToFile@{exportToFile}}
+\index{exportToFile@{exportToFile}!SLManager@{SLManager}}
+\doxysubsubsection{\texorpdfstring{exportToFile()}{exportToFile()}}
+{\footnotesize\ttfamily bool SLManager\+::export\+To\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод предоставляющий данные сохранения в файле. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & имя файла для экспорта. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+булево значение (true-\/ экспорт удался). 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{comment}{//...}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ Mod-\/>getDate();}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_s_l_manager_a265653831988358dd41152d9ac072b69}\label{class_s_l_manager_a265653831988358dd41152d9ac072b69} 
+\index{SLManager@{SLManager}!importFromFile@{importFromFile}}
+\index{importFromFile@{importFromFile}!SLManager@{SLManager}}
+\doxysubsubsection{\texorpdfstring{importFromFile()}{importFromFile()}}
+{\footnotesize\ttfamily bool SLManager\+::import\+From\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод предоставляющий данные сохранения в файле. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & имя файла для импорта. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+булево значение (true-\/ импорт удался). 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{comment}{//...}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ Mod-\/>setDate();}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Service/\mbox{\hyperlink{_s_l_manager_8h}{SLManager.\+h}}\end{DoxyCompactItemize}

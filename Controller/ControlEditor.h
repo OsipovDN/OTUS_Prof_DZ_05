@@ -1,10 +1,10 @@
 /*! \file
-	\brief Заголовочный файл ControlEditor.h
-	\details Файл содержит реализацию класса Controller модели MVC
+	\brief header file ControlEditor.h
+	\details The file contains an implementation of the Controller class of the MVC model
 */
 /*!
 	\defgroup Controller
-	\brief данный модуль является Контроллером модели MVC
+	\brief this module is a Controller of the MVC model
 */
 ///@{
 #pragma once
@@ -12,44 +12,44 @@
 #include"ViewEditor.h"
 #include "SLManager.h"
 #include <memory>
-/*! \brief Класса "ControlEdit"- Контроллер модели MVC
+/*! \brief Class "controlEdit"- Controller of the MVC model
 
-	Класс содержит описание полей и методов для взаимодействия пользователя с моделью графического редактора и обновлени отображения в классе View.
+	The class contains a description of fields and methods for user interaction with the graphical editor model and updating the display in the View class.
 */
 class ControlEdit {
 private:
-	std::shared_ptr <ModelEdit> Edit;	///< указатель на объект Model (графического редактора).
-	std::unique_ptr <ViewEdit> View;	///< указатель на объект view (графическое представление/отображение)
-	std::unique_ptr <SLManager> Slm;	///< указатель на объект Service(сервис для работы с файлами)
+	std::shared_ptr <ModelEdit> Edit;	///< pointer to the Model object (graphic editor).
+	std::unique_ptr <ViewEdit> View;	///< pointer to the view object (graphical representation/display)
+	std::unique_ptr <SLManager> Slm;	///< pointer to the Service object (service for working with files)
 public:
-	/// \brief Конструктор класса для формирования объекта и инициализации полей.
+	/// \brief Constructor of the class for object formation and initialization of fields.
 	ControlEdit() {
 		Edit = std::make_shared<ModelEdit>();
 		View = std::make_unique<ViewEdit>(Edit);
 		Slm = std::make_unique<SLManager>(Edit);
 	};
-	/*! \brief Метод добавления новой фигуры.
-		\details После добавления нового объекта (геометричекой фигуры) производится обновление отображения объекта View
-		\param tp тип создоваемой фигуры
-		\return не имеет возвращаемого значения.
+	/*! \brief The method of adding a new shape.
+		\details After adding a new object (geometric shape), the display of the View object is updated
+		\param tp the type of shape being created
+		\return has no return value.
 	*/
 	void AddFig(std::string tp) {
 		Edit->addShape(tp);
 		View->update();
 	}
-	/*! \brief Метод загрузки данных для отображения из файла
-		\details После загрузки данных модели производится обновление отображения объекта View
-		\param filename имя файла для загрузки данных.
-		\return не имеет возвращаемого значения.
+	/*! \brief Method of loading data to display from a file
+		\details After loading the model data, the display of the View object is updated
+		\param filename the name of the file to download the data.
+		\return has no return value.
 	*/
 	void openFromFile(std::string filename) {
 		Slm->importFromFile(filename);
 		View->update();
 	};
-	/*! \brief Метод сохранения данных модели в файл.
-		\details После зсохранения данных модели производится обновление отображения объекта View
-		\param filename имя файла для загрузки данных.
-		\return не имеет возвращаемого значения.
+	/*! \brief Method for saving model data to a file.
+		\details After saving the model data, the display of the View object is updated
+		\param filename the name of the file to download the data.
+		\return has no return value.
 	*/
 	void saveToFile(std::string filename) {
 		Slm->exportToFile(filename);
