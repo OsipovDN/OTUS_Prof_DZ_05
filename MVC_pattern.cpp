@@ -9,6 +9,7 @@
 #include <iostream>
 #include "ControlEditor.h"
 
+
 int main()
 {
 	ControlEdit Controller;
