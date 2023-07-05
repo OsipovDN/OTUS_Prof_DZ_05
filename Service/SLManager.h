@@ -10,6 +10,7 @@
 ///@{
 #pragma once
 #include "ModelEditor.h"
+#include <memory>
 /*! \brief Class Interface "Save/Load Manager".
 
 	The class describes methods for saving and loading data from a model to/from a file.

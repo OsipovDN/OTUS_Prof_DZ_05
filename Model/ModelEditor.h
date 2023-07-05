@@ -11,6 +11,7 @@
 #pragma once
 #include "IShapes.h"
 #include <vector>
+#include <memory>
 /*! \brief The "ModelEdit" class is a graphic editor
 
 	The class contains a description of fields and methods of geometric shapes.

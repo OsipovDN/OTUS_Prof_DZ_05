@@ -9,6 +9,7 @@
 ///@{
 #pragma once
 #include "ModelEditor.h"
+#include <memory>
 /*! \brief View class for console output
 
 	Displays the changes made by the user through the Controller interface
