@@ -16,3 +16,6 @@ int main()
 	Controller.AddFig("Triangle");
 	Controller.AddFig("Triangle");
 	Controller.AddFig("Circle");
+
+	return 0;
+}

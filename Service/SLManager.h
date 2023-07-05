@@ -10,6 +10,8 @@
 ///@{
 #pragma once
 #include "ModelEditor.h"
+#include <iostream>
+#include <memory>
 /*! \brief Class Interface "Save/Load Manager".
 
 	The class describes methods for saving and loading data from a model to/from a file.
@@ -32,7 +34,7 @@ public:
 	*/
 	bool importFromFile(std::string filename) {
 		//...
-		Mod->setDate();
+		Mod->setDate(filename);
 	}
 	/*! A method that provides save data in a file.
 		\param filename the name of the file to export.
@@ -40,7 +42,7 @@ public:
 	*/
 	bool exportToFile(std::string filename) {
 		//...
-		Mod->getDate();
+		Mod->getDate(filename);
 	}
 };
 ///@}

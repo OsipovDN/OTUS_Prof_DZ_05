@@ -11,6 +11,7 @@
 #pragma once
 #include "IShapes.h"
 #include <vector>
+#include <memory>
 /*! \brief The "ModelEdit" class is a graphic editor
 
 	The class contains a description of fields and methods of geometric shapes.
@@ -51,10 +52,10 @@ public:
 	/*! A method that provides save data in a file.
 		\return vector of pointers to objects of geometric shapes.
 	*/
-	std::vector<std::shared_ptr<IShapes>> getDate() { return pul_fig; }
+	std::vector<std::shared_ptr<IShapes>> getDate(std::string&) { return pul_fig; }
 	/*! A method that provides save data in a file.
 		\return has no return value.
 	*/
-	void setDate (/*std::vector<std::shared_ptr<IShapes>>*/){}
+	void setDate (std::string&){}
 };
 ///@}
