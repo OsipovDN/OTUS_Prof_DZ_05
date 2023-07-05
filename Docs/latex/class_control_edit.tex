@@ -1,0 +1,145 @@
+\doxysection{Control\+Edit Class Reference}
+\hypertarget{class_control_edit}{}\label{class_control_edit}\index{ControlEdit@{ControlEdit}}
+
+
+Class \"{}control\+Edit\"{}-\/ Controller of the MVC model.  
+
+
+
+
+{\ttfamily \#include $<$Control\+Editor.\+h$>$}
+
+
+
+Collaboration diagram for Control\+Edit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_control_edit__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_control_edit_a5712b7d7c08e36633dd8cc51e981bf53}{Control\+Edit}} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the class for object formation and initialization of fields. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_edit_a5f2a2bc9e948d07717344dab009fcc6f}{Add\+Fig}} (std\+::string tp)
+\begin{DoxyCompactList}\small\item\em The method of adding a new shape. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_edit_aa33be2f6149b91cb5c9ff834efd39a9a}{open\+From\+File}} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Method of loading data to display from a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_edit_a60d54465bb07ccc079bbe5afdab2913c}{save\+To\+File}} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Method for saving model data to a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \"{}control\+Edit\"{}-\/ Controller of the MVC model. 
+
+The class contains a description of fields and methods for user interaction with the graphical editor model and updating the display in the View class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_control_edit_a5712b7d7c08e36633dd8cc51e981bf53}\label{class_control_edit_a5712b7d7c08e36633dd8cc51e981bf53} 
+\index{ControlEdit@{ControlEdit}!ControlEdit@{ControlEdit}}
+\index{ControlEdit@{ControlEdit}!ControlEdit@{ControlEdit}}
+\doxysubsubsection{\texorpdfstring{ControlEdit()}{ControlEdit()}}
+{\footnotesize\ttfamily Control\+Edit\+::\+Control\+Edit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor of the class for object formation and initialization of fields. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ Edit\ =\ std::make\_shared<ModelEdit>();}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ View\ =\ std::make\_unique<ViewEdit>(Edit);}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ Slm\ =\ std::make\_unique<SLManager>(Edit);}
+\DoxyCodeLine{00030\ \ \ \ \ \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_control_edit_a5f2a2bc9e948d07717344dab009fcc6f}\label{class_control_edit_a5f2a2bc9e948d07717344dab009fcc6f} 
+\index{ControlEdit@{ControlEdit}!AddFig@{AddFig}}
+\index{AddFig@{AddFig}!ControlEdit@{ControlEdit}}
+\doxysubsubsection{\texorpdfstring{AddFig()}{AddFig()}}
+{\footnotesize\ttfamily void Control\+Edit\+::\+Add\+Fig (\begin{DoxyParamCaption}\item[{std\+::string}]{tp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The method of adding a new shape. 
+
+After adding a new object (geometric shape), the display of the View object is updated 
+\begin{DoxyParams}{Parameters}
+{\em tp} & the type of shape being created \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+has no return value. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ Edit-\/>addShape(tp);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ View-\/>update();}
+\DoxyCodeLine{00039\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_control_edit_aa33be2f6149b91cb5c9ff834efd39a9a}\label{class_control_edit_aa33be2f6149b91cb5c9ff834efd39a9a} 
+\index{ControlEdit@{ControlEdit}!openFromFile@{openFromFile}}
+\index{openFromFile@{openFromFile}!ControlEdit@{ControlEdit}}
+\doxysubsubsection{\texorpdfstring{openFromFile()}{openFromFile()}}
+{\footnotesize\ttfamily void Control\+Edit\+::open\+From\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Method of loading data to display from a file. 
+
+After loading the model data, the display of the View object is updated 
+\begin{DoxyParams}{Parameters}
+{\em filename} & the name of the file to download the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+has no return value. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ Slm-\/>importFromFile(filename);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ View-\/>update();}
+\DoxyCodeLine{00048\ \ \ \ \ \};}
+
+\end{DoxyCode}
+\Hypertarget{class_control_edit_a60d54465bb07ccc079bbe5afdab2913c}\label{class_control_edit_a60d54465bb07ccc079bbe5afdab2913c} 
+\index{ControlEdit@{ControlEdit}!saveToFile@{saveToFile}}
+\index{saveToFile@{saveToFile}!ControlEdit@{ControlEdit}}
+\doxysubsubsection{\texorpdfstring{saveToFile()}{saveToFile()}}
+{\footnotesize\ttfamily void Control\+Edit\+::save\+To\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Method for saving model data to a file. 
+
+After saving the model data, the display of the View object is updated 
+\begin{DoxyParams}{Parameters}
+{\em filename} & the name of the file to download the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+has no return value. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ Slm-\/>exportToFile(filename);}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ View-\/>update();}
+\DoxyCodeLine{00057\ \ \ \ \ \};}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Controller/\mbox{\hyperlink{_control_editor_8h}{Control\+Editor.\+h}}\end{DoxyCompactItemize}

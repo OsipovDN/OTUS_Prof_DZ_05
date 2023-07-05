@@ -1,0 +1,25 @@
+\doxysection{SLManager.\+h}
+\hypertarget{_s_l_manager_8h_source}{}\label{_s_l_manager_8h_source}\index{Service/SLManager.h@{Service/SLManager.h}}
+\mbox{\hyperlink{_s_l_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_model_editor_8h}{ModelEditor.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_s_l_manager}{SLManager}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ std::shared\_ptr<ModelEdit>\ Mod;\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_s_l_manager_aa9aea823720261cd2dbab7380957f005}{SLManager}}(std::shared\_ptr<ModelEdit>\ md)\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ Mod\ =\ md;}
+\DoxyCodeLine{00028\ \ \ \ \ \}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_s_l_manager_a265653831988358dd41152d9ac072b69}{importFromFile}}(std::string\ filename)\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{comment}{//...}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ Mod-\/>setDate();}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_s_l_manager_a094e81c17bf7bed58281ea0b66aba20a}{exportToFile}}(std::string\ filename)\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{comment}{//...}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ Mod-\/>getDate();}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ \};}
+
+\end{DoxyCode}
