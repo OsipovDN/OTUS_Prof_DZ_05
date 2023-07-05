@@ -1,42 +1,42 @@
 /*! \file
-	\brief Заголовочный файл SLManager.h
-	\details Файл содержит реализацию методов загрузки и сохранения данных модели в файл.
+	\brief header file SLManager.h
+	\details The file contains the implementation of methods for loading and saving model data to a file.
 */
 /*!
 	\defgroup Service
 	\ingroup Controller
-	\brief данный модуль предназначен для взаимодействия модели с файлами.
+	\brief this module is designed for the interaction of the model with files.
 */
 ///@{
 #pragma once
 #include "ModelEditor.h"
-/*! \brief Интерфейс класса "Save/Load Manager".
+/*! \brief Class Interface "Save/Load Manager".
 
-	Класс описывает методы сохранения и загрузки данных из модели в/из файл(а).
+	The class describes methods for saving and loading data from a model to/from a file.
 */
 class SLManager {
 private:
-	std::shared_ptr<ModelEdit> Mod;	///< указатель на объект модели.
+	std::shared_ptr<ModelEdit> Mod;	///< a pointer to the model object.
 public:
-	/*!Конструктор класса для формирования объекта взаимодействующего с моделью.
+	/*!Constructor of a class for forming an object interacting with the model.
 		
-		\param md указатель на объект модели.
+		\param md a pointer to the model object.
 		
 	*/
 	SLManager(std::shared_ptr<ModelEdit> md) {
 		Mod = md;
 	}
-	/*! Метод предоставляющий данные сохранения в файле.
-		\param filename имя файла для импорта.
-		\return булево значение (true- импорт удался).
+	/*! A method that provides save data in a file.
+		\param filename the name of the file to import.
+		\return boolean value (true- import was successful).
 	*/
 	bool importFromFile(std::string filename) {
 		//...
 		Mod->setDate();
 	}
-	/*! Метод предоставляющий данные сохранения в файле.
-		\param filename имя файла для экспорта.
-		\return булево значение (true- экспорт удался).
+	/*! A method that provides save data in a file.
+		\param filename the name of the file to export.
+		\return boolean value (true- export was successful).
 	*/
 	bool exportToFile(std::string filename) {
 		//...

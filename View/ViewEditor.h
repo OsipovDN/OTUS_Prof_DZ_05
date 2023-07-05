@@ -1,33 +1,33 @@
 /*! \file
-	\brief Заголовочный файл ViewEditor.h
-	\details Файл содержит реализацию отображения геометрических фигур расположенных в модели
+	\brief header file ViewEditor.h
+	\details The file contains the implementation of the display of geometric shapes located in the model
 */
 /*!
 	\defgroup View
-	\brief данный модуль предназначен для отображения геометрических фигур
+	\brief this module is designed to display geometric shapes
 */
 ///@{
 #pragma once
 #include "ModelEditor.h"
-/*! \brief Класс представления для вывода в консоль
+/*! \brief View class for console output
 
-	Отображает изменения внесенные пользователем через интерфейс Controller
+	Displays the changes made by the user through the Controller interface
 */
 class ViewEdit {
 private:
-	std::shared_ptr<ModelEdit> Mod;	///< Указатель на объект модели
+	std::shared_ptr<ModelEdit> Mod;	///< Pointer to the model object
 public:
-	/*! Конструктор для формирования объекта View
-		\param md указатель на объект модели
+	/*! Constructor for forming the View object
+		\param md pointer to the model object
 	*/
 	ViewEdit(std::shared_ptr<ModelEdit> md) {
 		Mod = md;
 	};
-	/*! Метод для обновления отображения
+	/*! Method for updating the display
 		
-		Метод используется для обновления данных об отображении в случае изменения модели.
-		Запуск обновления отображения производится через модуль Controller.
-		\return не имеет возвращаемого значнеия
+		The method is used to update the display data in case the model changes.
+		The display update is started via the Controller module.
+		\return has no return value
 	*/
 	void update() {
 		Mod->getFig();

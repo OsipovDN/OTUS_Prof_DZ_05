@@ -1,84 +1,84 @@
 /*! \file
-	\brief Заголовочный файл
+	\brief header file
 
-	Файл содержит описание классов простейших геометрических фигур и их интерфейса.
+	The file contains a description of the classes of the simplest geometric shapes and their interface.
 */
 /*!
 	\defgroup Shapes
 	\ingroup Model
-	\brief данный модуль предназначен реализации интерфеса геометрических фигур
+	\brief this module is designed to implement the interface of geometric shapes
 */
 ///@{
 #pragma once
 #include <iostream>
-/*! \brief Интерфейс класса "Фигура"
+/*! \brief Interface of the "Shape" class
 
-	Класс является интерфесом для описания полей и методов геометрических фигур.
+	The class is an interface for describing fields and methods of geometric shapes.
 */
 
 class IShapes {
 public:
-	/*! \brief Виртуальный метод интерфейса
+	/*! \brief Virtual Interface method
 
-		Чисто виртуальный метод интерфейсного класса предоставляющий данные для отображения
+		A purely virtual method of the interface class that provides data for mapping a
 	*/
 	virtual void showShape() const = 0;
-	/// \brief Виртуальный диструктор интерфейса
+	/// \brief Virtual Interface Destructor
 	virtual ~IShapes() = default;
 };
 
-/*! \brief Класс "Триугольник"
+/*! \brief The "Triangle" class
 
-	Класс содержит методы взаимодействия с геометрической фигупрой "Триугольник".
+	The class contains methods for interacting with the geometric shape "Triangle".
 */
 class Triangle :public IShapes {
 public:
-	/*! \brief Конструктор класса "Триугольник"
+	/*! \brief Constructor of the "Triangle" class
 
-		Инициализирует поля класса (координаты и т.д.),если они есть.
+		Initializes class fields (coordinates, etc.), if any.
 	*/
 	Triangle() {};
-	/*! Консантный переопределенный метод для отображения данных полей класса и предоставления их View'у.
-		\return не имеет возвращаемого значения.
+	/*! A constant redefined method for displaying class field data and providing them to the View.
+		\return has no return value.
 	*/
 	void showShape()const override { std::cout << "Triangle" << std::endl; }
-	/// \brief Виртуальный диструктор интерфейса
+	/// \brief Virtual Interface Destructor
 	~Triangle()override = default;
 };
-/*! \brief Класс "Квадрат"
+/*! \brief The "Square" class
 
-	Класс содержит методы взаимодействия с геометрической фигупрой "Квадрат".
+	The class contains methods for interacting with the geometric figure "Square".
 */
 class Square :public IShapes {
 public:
-	/*! \brief Конструктор класса "Квадрат"
+	/*! \brief Constructor of the "Square" class
 
-		Инициализирует поля класса (координаты и т.д.),если они есть.
+		Initializes class fields (coordinates, etc.), if any.
 	*/
 	Square()  {};
-	/*! Консантный переопределенный метод для отображения данных полей класса и предоставления их View'у.
-		\return не имеет возвращаемого значения.
+	/*! A constant redefined method for displaying class field data and providing them to the View.
+		\return has no return value.
 	*/
 	void showShape()const override { std::cout << "Square" << std::endl; }
-	/// \brief Виртуальный диструктор интерфейса
+	/// \brief Virtual Interface Destructor
 	~Square()override = default;
 };
-/*! \brief Класс "Окружность"
+/*! \brief Circle class
 
-	Класс содержит методы взаимодействия с геометрической фигупрой "Окружность".
+	The class contains methods for interacting with the geometric shape "Circle".
 */
 class Circle :public IShapes {
 public:
-	/*! \brief Конструктор класса "Окружность"
+	/*! \brief Constructor of the Circle class
 
-		Инициализирует поля класса (координаты и т.д.),если они есть.
+		Initializes class fields (coordinates, etc.), if any.
 	*/
 	Circle() {};
-	/*! Консантный переопределенный метод для отображения данных полей класса и предоставления их View'у.
-		\return не имеет возвращаемого значения.
+	/*! A constant redefined method for displaying class field data and providing them to the View.
+		\return has no return value.
 	*/
 	void showShape()const override { std::cout << "Circle" << std::endl; }
-	/// \brief Виртуальный диструктор интерфейса
+	/// \brief Virtual Interface Destructor
 	~Circle()override = default;
 };
 ///@}

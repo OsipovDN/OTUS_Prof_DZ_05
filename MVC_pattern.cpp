@@ -1,10 +1,10 @@
 ﻿/*! \authors Dmitry Osipov
-	\warning Данный проект представлен исключительно в учебных целях
+	\warning This project is presented exclusively for educational purposes
 */ 
 /*! \file
 	\brief файл MVC_pattern.cpp
-	\details Файл содержит пример взаимодейсвия пользователя и графического редактора реализованного
-	с использованием паттерна MVC
+	\details The file contains an example of user interaction and a graphical editor implemented
+		using the MVC pattern
 */
 #include <iostream>
 #include "ControlEditor.h"
