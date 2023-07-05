@@ -33,16 +33,16 @@ public:
 		\return boolean value (true- import was successful).
 	*/
 	bool importFromFile(std::string filename) {
-		//...
 		Mod->setDate(filename);
+		return true;
 	}
 	/*! A method that provides save data in a file.
 		\param filename the name of the file to export.
 		\return boolean value (true- export was successful).
 	*/
 	bool exportToFile(std::string filename) {
-		//...
 		Mod->getDate(filename);
+		return true;
 	}
 };
 ///@}
