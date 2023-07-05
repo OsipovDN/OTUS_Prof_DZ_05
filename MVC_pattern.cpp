@@ -1,4 +1,4 @@
-﻿/*! \authors Dmitry Osipov
+/*! \authors Dmitry Osipov
 	\warning This project is presented exclusively for educational purposes
 */ 
 /*! \file
@@ -16,6 +16,3 @@ int main()
 	Controller.AddFig("Triangle");
 	Controller.AddFig("Triangle");
 	Controller.AddFig("Circle");
-
-	return 0;
-}
