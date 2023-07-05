@@ -1,7 +1,0 @@
-<map id="View/ViewEditor.h" name="View/ViewEditor.h">
-<area shape="rect" id="Node000001" title="header file ViewEditor.h" alt="" coords="25,5,152,32"/>
-<area shape="rect" id="Node000002" href="$_control_editor_8h.html" title="header file ControlEditor.h" alt="" coords="5,80,172,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,47,91,80,86,80,86,47"/>
-<area shape="rect" id="Node000003" href="$_m_v_c__pattern_8cpp.html" title="файл MVC_pattern.cpp" alt="" coords="27,155,150,181"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,122,91,154,86,154,86,122"/>
-</map>
