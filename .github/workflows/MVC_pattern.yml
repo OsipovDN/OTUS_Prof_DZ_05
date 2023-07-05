@@ -40,9 +40,4 @@ jobs:
           asset_name: MVC_pattern-0.0.${{ github.run_number }}-Linux.deb
           
           asset_content_type: application/vnd.debian.binary-package
-      - name: Doxygen Action
-        uses: mattnotmitt/doxygen-action@v1.1.0
-        with:
-          doxyfile-path: "./Doxyfile" # default is ./Doxyfile
-          working-directory: "." # default is .
 
