@@ -1,0 +1,15 @@
+<map id="Model/Geometric_shapes/IShapes.h" name="Model/Geometric_shapes/IShapes.h">
+<area shape="rect" id="Node000001" title="header file" alt="" coords="9,5,178,48"/>
+<area shape="rect" id="Node000002" href="$_model_editor_8h.html" title="header file ModelEditor.h" alt="" coords="23,96,163,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,63,96,95,91,95,91,63"/>
+<area shape="rect" id="Node000003" href="$_control_editor_8h.html" title="header file ControlEditor.h" alt="" coords="10,245,176,272"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="52,132,29,149,12,172,8,182,9,192,21,212,42,229,66,242,63,247,39,233,17,215,4,194,3,182,7,169,25,146,49,128"/>
+<area shape="rect" id="Node000005" href="$_s_l_manager_8h.html" title="header file SLManager.h" alt="" coords="21,171,165,197"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="96,138,96,170,91,170,91,138"/>
+<area shape="rect" id="Node000006" href="$_view_editor_8h.html" title="header file ViewEditor.h" alt="" coords="190,171,316,197"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="135,127,226,168,224,172,133,132"/>
+<area shape="rect" id="Node000004" href="$_m_v_c__pattern_8cpp.html" title="файл MVC_pattern.cpp" alt="" coords="32,320,154,347"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="96,287,96,320,91,320,91,287"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="96,212,96,245,91,245,91,212"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="213,206,122,247,120,242,211,201"/>
+</map>
