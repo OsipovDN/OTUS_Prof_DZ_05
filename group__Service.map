@@ -1,0 +1,4 @@
+<map id="Service" name="Service">
+<area shape="rect" id="Node000002" href="$group__Controller.html" title="this module is a Controller of the MVC model" alt="" coords="5,5,82,31"/>
+<area shape="rect" id="Node000001" title="this module is designed for the interaction of the model with files." alt="" coords="130,5,195,31"/>
+</map>

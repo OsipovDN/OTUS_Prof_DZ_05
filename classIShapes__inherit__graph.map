@@ -1,0 +1,9 @@
+<map id="IShapes" name="IShapes">
+<area shape="rect" id="Node000001" title="Interface of the &quot;Shape&quot; class." alt="" coords="129,5,229,91"/>
+<area shape="rect" id="Node000002" href="$classCircle.html" title="Circle class." alt="" coords="5,139,105,244"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,104,102,141,98,137,131,100"/>
+<area shape="rect" id="Node000003" href="$classSquare.html" title="The &quot;Square&quot; class." alt="" coords="129,139,229,244"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,106,182,139,177,139,177,106"/>
+<area shape="rect" id="Node000004" href="$classTriangle.html" title="The &quot;Triangle&quot; class." alt="" coords="253,139,353,244"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="228,100,260,137,256,141,224,104"/>
+</map>

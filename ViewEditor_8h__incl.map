@@ -1,0 +1,14 @@
+<map id="View/ViewEditor.h" name="View/ViewEditor.h">
+<area shape="rect" id="Node000001" title="header file ViewEditor.h" alt="" coords="117,5,243,31"/>
+<area shape="rect" id="Node000002" href="$ModelEditor_8h.html" title="header file ModelEditor.h" alt="" coords="87,79,187,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,33,154,67,150,64,170,30"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="190,153,257,178"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="186,31,201,78,218,137,213,139,196,80,181,32"/>
+<area shape="rect" id="Node000003" href="$IShapes_8h.html" title="header file" alt="" coords="5,153,85,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,107,74,145,71,141,120,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="108,153,166,178"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="140,105,140,137,134,137,134,105"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="153,103,199,141,196,145,150,107"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="9,226,81,252"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="48,179,48,211,42,211,42,179"/>
+</map>
